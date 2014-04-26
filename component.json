@@ -1,0 +1,7 @@
+{
+  "name": "normalize.css",
+  "repo": "heatroom/normalize.css",
+  "version": "3.0.1",
+  "styles": ["normalize.css"],
+  "license": "MIT"
+}
