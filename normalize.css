@@ -490,3 +490,8 @@ th {
 iframe {
   display: block;
 }
+
+.clearfix:before, .clearfix:after, .container:before, .container:after{content: "";display: table;}
+.clearfix:after, .container:after{clear: both;}
+.clearfix, .container{*zoom: 1;}
+.clear{clear:both;}
