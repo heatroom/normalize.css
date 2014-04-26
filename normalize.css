@@ -33,8 +33,9 @@ textarea {
  * Remove default margin.
  */
 
-body {
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input,textarea,form,th,td {
   margin: 0;
+  padding: 0;
 }
 
 /* HTML5 display definitions
@@ -100,6 +101,15 @@ template {
    ========================================================================== */
 
 /**
+ * 1. Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  text-decoration: none;
+  background: transparent; /* 1 */
+}
+
+/**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 
@@ -109,16 +119,6 @@ a:focus {
 
 a:hover {
   text-decoration: underline;
-}
-
-
-/**
- * 1. Remove the gray background color from active links in IE 10.
- */
-
-a {
-  text-decoration: none;
-  background: transparent; /* 1 */
 }
 
 /**
@@ -139,6 +139,7 @@ a:hover {
 
 abbr[title] {
   border-bottom: 1px dotted;
+  cursor: help;
 }
 
 /**
@@ -214,6 +215,8 @@ sub {
 
 img {
   border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
 }
 
 /**
@@ -450,6 +453,7 @@ fieldset {
 legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
+  white-space: normal;
 }
 
 /**
@@ -460,6 +464,7 @@ legend {
 textarea {
   overflow: auto;
   vertical-align: top;
+  resize: vertical;
 }
 
 /**
@@ -469,6 +474,10 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+
+ul, ol {
+  list-style-type: none outside none;
 }
 
 /* Tables
